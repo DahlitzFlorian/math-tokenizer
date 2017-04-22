@@ -7,3 +7,13 @@
 # __pycache__
 __pycache__/
 */__pycache__/
+
+# build-files
+dist/
+build/
+*egg-info/
+
+# pypi
+.pypirc
+README.rst
+automate_pypi_publishing.cmd
