@@ -32,6 +32,31 @@ class TestTokenizer(unittest.TestCase):
 
         # check
         self.assertEqual(result, expected_result)
+    
+    def test_tokenizer_two_in_row(self):
+        """
+        Checks scenario when two of each type
+        can occur in a row (e.g. two literals behind each
+        other)
+        """
+        # sample function
+        function = "x^3+44x-3"
+
+        # tokenize
+        result = tokenize(function)
+        expected_result = {
+            0 : ("Variable", "x"),
+            1 : ("Operator", "^"),
+            2 : ("Literal", "3"),
+            3 : ("Operator", "+"),
+            4 : ("Literal", "44"),
+            5 : ("Variable", "x"),
+            6 : ("Operator", "-"),
+            7 : ("Literal", "3")
+        }
+
+        # check
+        self.assertEqual(result, expected_result)
 
 
 if __name__ == "__main__":
