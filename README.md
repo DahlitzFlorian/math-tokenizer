@@ -2,15 +2,15 @@
 [![Build Status](https://travis-ci.org/DahlitzFlorian/math-tokenizer.svg?branch=master)](https://travis-ci.org/DahlitzFlorian/math-tokenizer)
 
 ## Description ##
-This is a simple and lightweighted tokenizer for mathematical functions written in pure Python. It was tested with Python 3.4.
+This is a simple and lightweighted tokenizer for mathematical functions written in pure Python. It was tested with Python >= 3.4.
 
-version 1.0.0
+version 1.0.1
 
 ## Features ##
 * tokenize mathematical function
 
 ## Future features ##
-* tokenizer with own rules
+* create own rules
 
 ## Installation ##
 The package is available via ```pip```
